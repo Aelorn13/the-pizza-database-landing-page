@@ -1,7 +1,3 @@
-/* =========================================
-   MASTHEAD - Mobile First
-   ========================================= */
-
 header.masthead {
     position: relative;
     background: #F8F4E9 !important;
@@ -25,7 +21,6 @@ header.masthead::after {
     gap: 2rem;
 }
 
-/* --- Left --- */
 .masthead-left {
     text-align: center;
     width: 100%;
@@ -61,14 +56,12 @@ header.masthead .masthead-heading {
     margin-bottom: 1.5rem;
 }
 
-/* --- Right: blob + image + cards --- */
 .masthead-right {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* Extra horizontal padding so cards peeking outside blob are not clipped */
     padding: 1rem 3rem;
 }
 
@@ -92,12 +85,6 @@ header.masthead .masthead-heading {
     z-index: 2;
 }
 
-/* --- Floating cards ---
-   3 cards at deliberately different heights:
-   --1  top-left, peeking outside blob
-   --2  right side, roughly 1/3 down
-   --3  bottom-left, well above pizza overflow
-========================================= */
 .pizza-card {
     position: absolute;
     background: #CC5500;
@@ -126,7 +113,6 @@ header.masthead .masthead-heading {
     left: -20px;
 }
 
-/* --- Button --- */
 .btn-pizza {
     display: inline-flex;
     align-items: center;
@@ -158,10 +144,6 @@ header.masthead .masthead-heading {
 .pizza-emoji {
     font-size: 1.2em;
 }
-
-/* =========================================
-   SMALL PHONES (max 480px)
-   ========================================= */
 @media (max-width: 480px) {
     header.masthead .masthead-logo {
         width: 28px;
@@ -200,9 +182,6 @@ header.masthead .masthead-heading {
     }
 }
 
-/* =========================================
-   LANDSCAPE PHONES
-   ========================================= */
 @media (max-height: 500px) and (orientation: landscape) {
     header.masthead {
         padding: 1.5rem 2rem;
@@ -268,9 +247,6 @@ header.masthead .masthead-heading {
     }
 }
 
-/* =========================================
-   TABLET & DESKTOP (768px+)
-   ========================================= */
 @media (min-width: 768px) {
     header.masthead {
         padding: 5rem 3rem;
@@ -358,9 +334,6 @@ header.masthead .masthead-heading {
         padding: 1.5rem 2rem;
     }
 }
-/* =========================================
-   LARGE DESKTOP (1200px+)
-   ========================================= */
 @media (min-width: 1200px) {
     header.masthead .masthead-logo {
         width: 90px;
